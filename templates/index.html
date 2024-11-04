@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testing</title>
+    </head>
+    <body>
+        <h1>Job Application Form</h1>
+        <form >
+            <div>
+                <labels for="first_name">First Name:</labels>
+                <input type="text" id='first_name' name='first_name' required>
+            </div>
+            <div>
+                <labels for="last_name">Last Name:</labels>
+                <input type="text" id='last_name' name='last_name' required>
+            </div>
+            <div>
+                <labels for="email">Email:</labels>
+                <input type="email" id='email' name='email' required>
+            </div>
+            <div>
+                <labels for="date">Available Start Date:</labels>
+                <input type="date" id='date' name="date" required>
+            </div>
+                <div id="occupation">
+                    <label>Current Occupation:</label>
+                    <br>
+                    <div>
+                    <input type="radio" id='employed' name="occupation" required>
+                    <labels for="employed">Employed:</labels>
+
+                    <input type="radio" id='unemployed' name="occupation" required>
+                    <labels for="unemployed">Unemployed:</labels>
+                    
+                    <input type="radio" id='self-employed' name="occupation" required>
+                    <labels for="self-employed">Self-Employed:</labels>
+                    
+                    <input type="radio" id='student' name="occupation" required>
+                    <labels for="student">Student:</labels>
+                </div>
+            </div>
+            <button type="button">Submit</button>
+        </form>
+    </body>
 </html>
